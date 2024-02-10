@@ -46,7 +46,7 @@ def temperatura():
     else:
         print("Opción no válida")
 
-# Función principal
+# Función principal.
 def main():
     print("Bienvenido al Conversor de Unidades")
     print("Seleccione el tipo de conversión:")

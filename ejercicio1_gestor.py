@@ -55,7 +55,7 @@ gestor.editar_tarea(0, tarea_editada)
 
 gestor.mostrar_tareas()
 
-# Eliminar la segunda tarea
+# Eliminar la segunda tarea.
 gestor.eliminar_tarea(1)
 
 gestor.mostrar_tareas()
