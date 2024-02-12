@@ -1,0 +1,30 @@
+# Definimos las preguntas y respuestas
+trivia = {
+    "Ciencia": {
+        "¿Cuál es el elemento químico más abundante en el universo?": "Hidrógeno",
+        "¿Cuántos planetas hay en nuestro sistema solar?": "8"
+    },
+    "Geografía": {
+        "¿Cuál es la capital de Colombia?": "Bogotá",
+        "¿Cuál es el río más largo del mundo?": "Amazonas"
+    }
+}
+
+def jugar_trivia():
+    print("¡Bienvenido al juego de trivia!")
+    print("Categorías disponibles: ", ', '.join(trivia.keys()))
+    
+    categoria = input("Por favor, selecciona una categoría: ")
+    if categoria not in trivia:
+        print("Lo siento, esa categoría no existe.")
+        return
+    
+    for pregunta, respuesta in trivia[categoria].items():
+        print(pregunta)
+        respuesta_usuario = input("Tu respuesta: ")
+        if respuesta_usuario.lower() == respuesta.lower():
+            print("¡Correcto!")
+        else:
+            print(f"Lo siento, la respuesta correcta era {respuesta}.")
+
+jugar_trivia()
